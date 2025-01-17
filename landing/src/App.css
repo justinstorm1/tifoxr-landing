@@ -1,0 +1,37 @@
+.App {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  background: #212529;
+}
+
+.container.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  .row.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    h1 {
+      font-size: 50px;
+      color: var(--light);
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .row.cards {
+      .cards {
+        gap: 50px;
+      }
+    }
+}
