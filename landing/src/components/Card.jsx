@@ -8,7 +8,7 @@ function Card(props) {
             {!props.isReversed ? (
                 <>
                     <div className="col-lg-6 col-md-6 col-sm-12 p-0">
-                        <img src={props.src} alt={props.alt} className="img-fluid" />
+                        <img src={props.src} className="img-fluid" alt="Card" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center px-5 py-lg-0 py-md-0 py-5">
                         <p>{props.description}</p>
@@ -20,7 +20,7 @@ function Card(props) {
                         <p>{props.description}</p>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 p-0">
-                        <img src={props.src} alt={props.alt} className="img-fluid" />
+                        <img src={props.src} className="img-fluid" alt="Card" />
                     </div>
                 </>
             )}

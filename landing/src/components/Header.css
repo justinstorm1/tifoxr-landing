@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fugaz+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 header {
     height: 100vh;
     height: 100dvh;
     width: 100vw;
-    background: radial-gradient(rgba(0, 0, 0, 0.75), transparent, transparent), url('abigail-keenan-8-s5QuUBtyM-unsplash.jpg') bottom/cover no-repeat;
     background-attachment: fixed;
 
     .container {

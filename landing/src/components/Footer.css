@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fugaz+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 footer {
     background: #000;
 
@@ -13,10 +15,11 @@ footer {
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 50px;
+            margin-bottom: 200px;
     
             .image {
                 img {
-                    height: 100px;
+                    height: 75px;
                 }
             }
         
