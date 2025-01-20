@@ -1,0 +1,37 @@
+.App {
+  background: #212529;
+
+  .container.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    
+    .row.cards {
+      display: flex;
+      gap: 20px;
+
+      h1 {
+        color: var(--light);
+        font-weight: bold;
+        font-size: 50px;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    .container.cards {
+      .row.cards {
+        .cards {
+          gap: 50px;
+        }
+      }
+    }
+  }
+}

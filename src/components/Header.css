@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fugaz+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+header {
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    background-attachment: fixed;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .row {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat';
+            color: var(--light);
+            text-align: center;
+            font-weight: bold;
+
+            h1 {
+                font-weight: 1000;
+            }
+
+            a {
+                color: var(--logoblue);
+                background: var(--logoyellow);
+                width: max-content;
+                padding: 10px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 1000;
+                transition: 0.3s ease;
+                position: relative;
+                overflow: hidden;
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.2s ease;
+                }
+            }
+            a::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: -100%;
+                background: var(--logoblue);
+                transition: 0.4s ease;
+            }
+            a:hover::after {
+                left: 0;
+            }
+            a:hover span {
+                color: var(--logoyellow);
+            }
+        }
+    }
+}
