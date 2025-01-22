@@ -29,7 +29,7 @@ header {
     height: 100vh;
     height: 100dvh;
     width: 100vw;
-    background: radial-gradient(rgba(0, 0, 0, 0.75), transparent, transparent), url('images/soccer\ pics/abigail-keenan-8-s5QuUBtyM-unsplash.jpg') bottom/cover no-repeat;
+    background: radial-gradient(rgba(0, 0, 0, 0.75), transparent, transparent), url('images/soccer\ pics/abigail-keenan-8-s5QuUBtyM-unsplash.jpg') center/cover no-repeat;
 
     .container {
         height: 100%;
