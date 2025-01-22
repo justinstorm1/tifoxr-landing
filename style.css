@@ -27,6 +27,7 @@ body {
 
 header {
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
     background: radial-gradient(rgba(0, 0, 0, 0.75), transparent, transparent), url('images/soccer\ pics/abigail-keenan-8-s5QuUBtyM-unsplash.jpg') bottom/cover no-repeat;
     background-attachment: fixed;
@@ -154,7 +155,7 @@ footer {
     
             .image {
                 img {
-                    height: 75px;
+                    height: 120px;
                 }
             }
         
@@ -182,8 +183,9 @@ footer {
         }
     }
 }
-@media (max-width: 350px) {
-    footer .container-fluid .top .image {
+@media (max-width: 450px) {
+    footer .container-fluid .top .image,
+    footer .container-fluid .top .socials {
         width: 100%;
         display: flex;
         justify-content: center;
