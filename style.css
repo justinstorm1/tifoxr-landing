@@ -30,7 +30,6 @@ header {
     height: 100dvh;
     width: 100vw;
     background: radial-gradient(rgba(0, 0, 0, 0.75), transparent, transparent), url('images/soccer\ pics/abigail-keenan-8-s5QuUBtyM-unsplash.jpg') bottom/cover no-repeat;
-    background-attachment: fixed;
 
     .container {
         height: 100%;
