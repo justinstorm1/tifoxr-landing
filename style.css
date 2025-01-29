@@ -136,6 +136,115 @@ header {
     }
 }
 
+.container.form {
+    h1 {
+        font-family: 'Montserrat';
+        font-weight: 1000;
+        color: var(--light);
+        text-align: center;
+        font-size: 40px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .row {
+            width: 100%;
+            max-width: 700px;
+            gap: 10px;
+
+            input, textarea {
+                border: 2px solid rgba(255, 255, 255, 0.25);
+                box-shadow: none !important;
+                font-family: 'Montserrat';
+                font-weight: bold;
+                color: var(--light);
+                background: transparent;
+                border-radius: 5px;
+                border-bottom: 2px solid var(--light);
+            }
+
+            label, label::before, label::after {
+                background: transparent;
+                color: var(--light);
+                font-family: 'Montserrat';
+                font-weight: bold;
+            }
+
+            textarea {
+                min-height: 10rem;
+            }
+        }
+        .row:nth-child(1) {
+            gap: 0;
+            .col-lg-6:nth-child(1) {
+                padding-right: 5px;
+            }
+            .col-lg-6:nth-child(2) {
+                padding-left: 5px;
+            }
+        }
+        .row.button {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            button {
+                color: var(--logoblue);
+                background: var(--logoyellow);
+                width: max-content;
+                padding: 10px 30px;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 1000;
+                transition: 0.3s ease;
+                position: relative;
+                overflow: hidden;
+                border: none;
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.2s ease;
+                }
+            }
+            button::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: -100%;
+                background: var(--logoblue);
+                transition: 0.4s ease;
+            }
+            button:hover::after {
+                left: 0;
+            }
+            button:hover span {
+                color: var(--logoyellow);
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .container.form {
+        form {
+            .row:nth-child(1) {
+                gap: 10px;
+                .col-lg-6 {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+}
+
 footer {
     background: #000;
     width: 100%;
