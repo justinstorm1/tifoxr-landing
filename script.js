@@ -9,9 +9,11 @@ form.addEventListener('submit', e => {
 
     fetch(form.action, {
         method: "POST",
-        body: new FormData(document.getElementById("contact-form")),
+        body: new FormData(form),
     })
     .then(response => response.json());
+
+    sendMail();
 
     const formHeader = document.getElementById('form-header');
     formHeader.style.fontSize = '30px';
@@ -25,3 +27,13 @@ form.addEventListener('submit', e => {
     const formButton = document.getElementById('form-button');
     formButton.style.display = 'none';
 });
+
+function sendMail() {
+    let params = {
+        name : document.getElementById('name').value,
+        email : document.getElementById('email').value,
+        message : document.getElementById('message').value,
+    }
+
+    emailjs.send('service_tuev0bb', 'template_oc1rq2f', params);
+}
